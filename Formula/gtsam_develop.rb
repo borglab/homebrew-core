@@ -1,5 +1,5 @@
-class Gtsam < Formula
-  desc "Georgia Tech Smoothing and Mapping"
+class GtsamDevelop < Formula
+  desc "GTSAM Latest Develop"
   homepage "https://gtsam.org"
   version "latest"
   license "BSD-2-Clause"
