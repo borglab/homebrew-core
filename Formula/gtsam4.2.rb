@@ -1,8 +1,8 @@
-class Gtsam42a7 < Formula
+class Gtsam42 < Formula
   desc "Georgia Tech Smoothing and Mapping"
   homepage "https://gtsam.org"
-  url "https://github.com/borglab/gtsam/archive/refs/tags/4.2a7.tar.gz"
-  version "4.2a7"
+  url "https://github.com/borglab/gtsam/archive/refs/tags/4.2.tar.gz"
+  version "4.2"
   sha256 "809d817eac24acbcfb04358315b9bb8c9cdbda664b7a49c3c8c400b96d6dd945"
   license "BSD-2-Clause"
 
@@ -20,10 +20,11 @@ class Gtsam42a7 < Formula
 
   def install
     custom_cmake_args = [
-      "-DCMAKE_BUILD_TYPE=Debug",
+      "-DCMAKE_BUILD_TYPE=Release",
       "-DGTSAM_BUILD_TESTS=OFF",
       "-DGTSAM_WITH_TBB=OFF",
-      "-DGTSAM_BUILD_EXAMPLES_ALWAYS=OFF", "-DGTSAM_ALLOW_DEPRECATED_SINCE_V42=OFF",
+      "-DGTSAM_BUILD_EXAMPLES_ALWAYS=OFF",
+      "-DGTSAM_ALLOW_DEPRECATED_SINCE_V42=OFF",
       "-DGTSAM_USE_QUATERNIONS=OFF",
       "-DGTSAM_ROT3_EXPMAP=ON",
       "-DGTSAM_POSE3_EXPMAP=ON",
