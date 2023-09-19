@@ -1,4 +1,4 @@
-class GtsamAt42 < Formula
+class Gtsam42 < Formula
   desc "Georgia Tech Smoothing and Mapping"
   homepage "https://gtsam.org"
   url "https://github.com/borglab/gtsam/archive/refs/tags/4.2.tar.gz"
